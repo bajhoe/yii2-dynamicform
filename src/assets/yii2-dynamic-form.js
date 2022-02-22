@@ -7,6 +7,7 @@
  * @contributor Vivek Marakana <vivek.marakana@gmail.com>
  * @contributor Yoda <user1007017@gmail.com>
  * @contributor Vivek Marakana <vivek.marakana@gmail.com>
+ * @contributor Bayu Setiawan <bajhoe@gmail.com>
  */
 (function ($) {
     var pluginName = 'yiiDynamicForm';
@@ -605,6 +606,18 @@
                 $(this).rating(eval($(this).attr('data-krajee-rating')));
             });
         }
+       // "kartik-v/yii2-numbercontrol"
+	    var $hasNumberControl = $(widgetOptionsRoot.widgetItem).find('[data-krajee-numbercontrol]');
+	    if ($hasNumberControl.length > 0) {
+		$hasNumberControl.each(function() {
+		    var configNumberControl = eval($(this).attr('data-krajee-numbercontrol'));
+		    configNumberControl.displayId = $(this).parent().prev().attr('id');
+		    if ($(this).data('numberControl')) {
+			$(this).numberControl('destroy');
+		    }
+		    $(this).numberControl(configNumberControl);
+		});
+	    }
     };
 
 })(window.jQuery);
