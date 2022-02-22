@@ -1,8 +1,8 @@
 {
-    "name": "kidzen/yii2-dynamicform",
+    "name": "bajhoe/yii2-dynamicform",
     "description": "It is widget to yii2 framework to clone form elements in a nested manner, maintaining accessibility.",
     "keywords": [
-        "kidzen",
+        "bajhoe",
         "yii2",
         "extension",
         "widget",
@@ -13,20 +13,26 @@
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
     "support": {
-        "issues": "https://github.com/kidzen/yii2-dynamicform/issues",
-        "wiki": "https://github.com/kidzen/yii2-dynamicform/wiki/",
-        "source": "https://github.com/kidzen/yii2-dynamicform"
+        "issues": "https://github.com/bajhoe/yii2-dynamicform/issues",
+        "wiki": "https://github.com/bajhoe/yii2-dynamicform/wiki/",
+        "source": "https://github.com/bajhoe/yii2-dynamicform"
     },
     "authors": [
         {
             "name": "kidzen",
             "email": "kidzenfxc@gmail.com"
+        },
+        {
+            "name": "Bajhoe",
+            "email": "me@bajhoe.web.id",
+            "homepage": "https://bajhoe.web.id",
+            "role": "Developer and Watcher"
         }
     ],
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/kidzen/yii2-dynamicform"
+            "url": "https://github.com/bajhoe/yii2-dynamicform"
         },
         {
             "type": "composer",
@@ -43,7 +49,7 @@
     },
     "autoload": {
         "psr-4": {
-            "kidzen\\dynamicform\\": "src"
+            "bajhoe\\dynamicform\\": "src"
         }
     }
 }
