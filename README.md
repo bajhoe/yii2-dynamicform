@@ -24,13 +24,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist kidzen/yii2-dynamicform "*"
+php composer.phar require --prefer-dist bajhoe/yii2-dynamicform "*"
 ```
 
 or add
 
 ```
-"kidzen/yii2-dynamicform": "*"
+"bajhoe/yii2-dynamicform": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -56,7 +56,7 @@ Usage
 <?php
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use kidzen\dynamicform\DynamicFormWidget;
+use bajhoe\dynamicform\DynamicFormWidget;
 ?>
 
 <div class="customer-form">
@@ -385,7 +385,7 @@ class Model extends \yii\base\Model
 <?php
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use kidzen\dynamicform\DynamicFormWidget;
+use bajhoe\dynamicform\DynamicFormWidget;
 ?>
 
 <div class="customer-form">
