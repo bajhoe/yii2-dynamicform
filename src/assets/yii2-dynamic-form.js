@@ -586,18 +586,7 @@
                 }
             });
         }
-        // }
-        //
-        // // "kartik-v/yii2-checkbox-x"
-        // var $hasCheckboxX = $(this).find('[data-krajee-checkboxx]');
-        // if ($hasCheckboxX.length > 0) {
-        //     $hasCheckboxX.each(function() {
-        //         if ($(this).attr('class') === 'cbx-loading') {
-        //             var ckxOptions = eval($(this).attr('data-krajee-checkboxx'));
-        //             $(this).checkboxX(ckxOptions);
-        //         }
-        //     });
-        // }
+
         // "kartik-v/yii2-widget-rating"
         var $hasRating = $(widgetOptionsRoot.widgetItem).find('[data-krajee-rating]');
         if ($hasRating.length > 0) {
@@ -606,18 +595,19 @@
                 $(this).rating(eval($(this).attr('data-krajee-rating')));
             });
         }
-       // "kartik-v/yii2-numbercontrol"
-	    var $hasNumberControl = $(widgetOptionsRoot.widgetItem).find('[data-krajee-numbercontrol]');
-	    if ($hasNumberControl.length > 0) {
-		$hasNumberControl.each(function() {
-		    var configNumberControl = eval($(this).attr('data-krajee-numbercontrol'));
-		    configNumberControl.displayId = $(this).parent().prev().attr('id');
-		    if ($(this).data('numberControl')) {
-			$(this).numberControl('destroy');
-		    }
-		    $(this).numberControl(configNumberControl);
-		});
+	    
+        // "kartik-v/yii2-numbercontrol"
+	var $hasNumberControl = $(widgetOptionsRoot.widgetItem).find('[data-krajee-numbercontrol]');
+	if ($hasNumberControl.length > 0) {
+	    $hasNumberControl.each(function() {
+	    var configNumberControl = eval($(this).attr('data-krajee-numbercontrol'));
+	    configNumberControl.displayId = $(this).parent().prev().attr('id');
+	    if ($(this).data('numberControl')) {
+		$(this).numberControl('destroy');
 	    }
+	    $(this).numberControl(configNumberControl);
+	    });
+	}
     };
 
 })(window.jQuery);
