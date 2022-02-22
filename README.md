@@ -6,9 +6,7 @@ Notes
 
 - This version supports following Kartik Widgets in yii2-dynamic-form.js :  
   
-  "kartik-v/yii2-widget-select2"
-  
-  "kartik-v/yii2-checkbox-x"
+  "kartik-v/yii2-numbercontol"
   
   
 
